@@ -1,3 +1,8 @@
+Task
+Подібно проекту Spring-Boot-Web-Tours зробіть проект Spring-Boot-Web-Clients.
+Client має: iм'я, прізвище, телефон.
+В INFO/ надайте SQL-запити.
+-------------------------
 
 ТЕХСТЕК
 ----------
@@ -69,13 +74,13 @@ src/main/
 pom.xml
 
 6) Модифікуємо
-com.example.app.SpringBootWebTours.WebToursApplication
+com.example.app.SpringBootWebClients.WebClientsApplication
 
 7) Формуємо контент в
 - main.resources (папки static та templates,
 файл application.properties - повинні додатись
 дефолтно)
-- com.example.app.SpringBootWebTours
+- com.example.app.SpringBootWebClients
 
 8) Стартуємо програму. Дивимося логи.
 
