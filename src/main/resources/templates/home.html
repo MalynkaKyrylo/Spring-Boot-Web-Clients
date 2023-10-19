@@ -3,7 +3,7 @@
 See: https://stackoverflow.com/questions/38730992/thymleaf-for-spring-in-intellij-uri-is-not-registered -->
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Sunny-Tours</title>
+    <title>Clients shopping list</title>
     <link rel='shortcut icon' th:href="@{icons/favicon.ico}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,43 +21,47 @@ See: https://stackoverflow.com/questions/38730992/thymleaf-for-spring-in-intelli
     <!-- content -->
     <div class="d-flex justify-content-center align-items-center text-white p-3"
          style="background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); font-size: 32px;">
-        <i class="bi-sun-fill" style="font-size: 3rem; color: #f1f73e;"></i>&nbsp;Sunny Tours
+        <i class="bi-sun-fill" style="font-size: 3rem; color: #f1f73e;"></i>&nbsp;Clients shopping list
     </div>
     <div>
-        <img th:src="@{images/palms_1920.jpg}" class="img-fluid" alt="image">
+        <img th:src="@{images/target_group_1920.jpg}" class="img-fluid" alt="image">
     </div>
     <div class="container p-5">
         <div class="container">
-            <div class="p-3">Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Donec tempor mi nulla, eu aliquam massa rutrum eu.
-                Nam tempus ultrices mauris. Integer mattis massa magna, vitae blandit
-                erat pretium id. In et velit vel metus ultrices consequat eget ac enim.
-                Praesent id mi laoreet, tincidunt elit sit amet, laoreet erat.
-                Cras rhoncus justo sem. Fusce at enim placerat, elementum est at,
-                venenatis arcu.
-            </div>
+            <div class="p-3">This page is a lesson 39 Task Java Pro course.
+                Clients purchase database<br>
+                Сreated to study the skills of using the following technologies:<br>
+                - Spring Boot<br>
+                - Thymeleaf<br>
+                - Lombok<br>
+                - MySQL<br>
+                - Bootstrap<br>
+                - Gson<br>
+                </div>
         </div>
         <div class="container">
-            <h3>Tour places</h3>
+            <h3>Clients</h3>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-                <div class="card p-2 m-0.5" th:each="place:${places}">
-                    <img th:src="@{${place.img}}" class="card-img-top" alt="card-img">
+                <div class="card p-2 m-0.5" th:each="client:${clients}">
+                    <img th:src="@{${client.img}}" class="card-img-top" alt="card-img">
                     <div class="card-body">
-                        <p class="card-text visually-hidden" th:text="${place.id}"></p>
-                        <p class="card-text" th:text="${place.name}"></p>
-                        <p class="card-text" th:text="${place.descr}"></p>
+                        <p class="card-text visually-hidden" th:text="${client.id}"></p>
+                        <p class="card-text" th:text="${client.firstName}"></p>
+                        <p class="card-text" th:text="${client.lastName}"></p>
+                        <p class="card-text" th:text="${client.phone}"></p>
+                        <p class="card-text" th:text="${client.descr}"></p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
-            <h3>Resorts</h3>
+            <h3>Phones</h3>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-                <div class="card p-2 m-0.5" th:each="resort:${resorts}">
-                    <img th:src="@{${resort.img}}" class="card-img-top" alt="card-img">
+                <div class="card p-2 m-0.5" th:each="phone:${phones}">
+                    <img th:src="@{${phone.img}}" class="card-img-top" alt="card-img">
                     <div class="card-body">
-                        <p class="card-text visually-hidden" th:text="${resort.id}"></p>
-                        <p class="card-text" th:text="${resort.descr}"></p>
+                        <p class="card-text visually-hidden" th:text="${phone.id}"></p>
+                        <p class="card-text" th:text="${phone.descr}"></p>
                     </div>
                 </div>
             </div>
@@ -79,8 +83,8 @@ See: https://stackoverflow.com/questions/38730992/thymleaf-for-spring-in-intelli
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body justify-content-center">
-                    <img th:src="@{images/hotel.jpg}" alt="image">
-                    <p style="font-size: 16px; color: #c72c67;">Sea Hotel. Three nights FREE.</p>
+                    <img th:src="@{images/samsung_galaxys23.jpg}" alt="image">
+                    <p style="font-size: 16px; color: #c72c67;">Samsung Galaxy S23. New model pre-order.</p>
                 </div>
             </div>
         </div>
@@ -93,10 +97,10 @@ See: https://stackoverflow.com/questions/38730992/thymleaf-for-spring-in-intelli
             <i class="bi bi-instagram"></i>&nbsp;&nbsp;
             <i class="bi bi-telegram"></i>
         </p>
-        <p class="text-center" style="font-size: 14px">Address: Rainbow St. 12, MainCity, 00125<br>
-            <span class="bi bi-telephone-fill"></span> Phone: +011 555 123-4587<br>
-            <span class="bi bi-envelope"></span> E-mail: sunnytours@mail.com<br>
-            <span class="p-3" style="font-size: 12px">&copy; Sunny Tours, LLC</span>
+        <p class="text-center" style="font-size: 14px">Address: Rainbow St. 12, Odesa, 65000<br>
+            <span class="bi bi-telephone-fill"></span> Phone: +777 987 654-3210<br>
+            <span class="bi bi-envelope"></span> E-mail: somecompany@mail.com<br>
+            <span class="p-3" style="font-size: 12px">&copy; Some Company, LLC</span>
         </p>
     </div>
     <!-- /footer -->
