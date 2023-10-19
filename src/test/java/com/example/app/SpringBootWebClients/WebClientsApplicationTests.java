@@ -1,10 +1,10 @@
-package com.example.app.SpringBootWebTours;
+package com.example.app.SpringBootWebClients;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebToursApplicationTests {
+class WebClientsApplicationTests {
 
 	@Test
 	void contextLoads() {
