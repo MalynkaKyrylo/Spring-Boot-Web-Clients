@@ -1,11 +1,11 @@
-package com.example.app.SpringBootWebTours.entity;
+package com.example.app.SpringBootWebClients.entity;
 
 import lombok.*;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Resort {
+public class Phone {
     private int id;
     private String img;
     private String descr;
