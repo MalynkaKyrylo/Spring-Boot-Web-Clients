@@ -1,16 +1,17 @@
 [
   {
     "id": 1,
-    "img": "resort-01_640.jpg",
-    "descr": "Lorem ipsum dolor"
+    "img": "honor_90.jpg",
+    "descr": "Honor 90"
   },
   {
     "id": 2,
-    "img": "resort-02_640.jpg",
+    "img": "moto_razr_40.jpg",
+    "descr": "Moto Razr 40"
   },
   {
     "id": 3,
-    "img": "resort-03_640.jpg",
-    "descr": "Nam tempus mauris."
+    "img": "poco_f5_pro.jpg",
+    "descr": "Poco F5 Pro"
   }
 ]
