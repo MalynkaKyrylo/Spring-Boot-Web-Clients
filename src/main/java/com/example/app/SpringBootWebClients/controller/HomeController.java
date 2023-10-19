@@ -1,7 +1,7 @@
-package com.example.app.SpringBootWebTours.controller;
+package com.example.app.SpringBootWebClients.controller;
 
-import com.example.app.SpringBootWebTours.service.ResortService;
-import com.example.app.SpringBootWebTours.service.PlaceService;
+import com.example.app.SpringBootWebClients.service.PhoneService;
+import com.example.app.SpringBootWebClients.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,14 +14,14 @@ import java.net.URISyntaxException;
 public class HomeController {
 
     @Autowired
-    PlaceService placeService;
+    ClientService clientService;
     @Autowired
-    ResortService resortService;
+    PhoneService phoneService;
 
     @GetMapping("/")
     public String getHome(Model model) throws URISyntaxException, IOException {
-        model.addAttribute("places", placeService.getTours());
-        model.addAttribute("resorts", resortService.getResorts());
+        model.addAttribute("clients", clientService.getClients());
+        model.addAttribute("phones", phoneService.getPhones());
         return "home";
     }
 }
